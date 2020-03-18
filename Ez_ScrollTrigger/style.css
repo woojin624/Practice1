@@ -73,4 +73,5 @@ article h1 {
 }
 .animateIn {
   opacity: 1;
+  transition: opacity 2s ease;
 }
