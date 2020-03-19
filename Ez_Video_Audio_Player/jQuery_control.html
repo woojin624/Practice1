@@ -16,7 +16,7 @@
     <button id="vplay">play video</button>
     <button id="vpause">pause video</button>
 
-    <video src="video/vivaldi.mp4" muted id="myVideo"></video>
+    <video src="video/vivaldi.mp4" muted id="myVideo" controls></video>
     <audio src="audio/Honey_Bee_01_web.mp3" id="myaudio"></audio>
 
     <script>
@@ -25,6 +25,9 @@
 
         $("#vplay").click(function() {
           myVideo.get(0).play();
+        });
+        $("#vpause").click(function() {
+          myVideo.get(0).pause();
         });
       });
     </script>
