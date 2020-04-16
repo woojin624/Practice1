@@ -136,7 +136,19 @@ img {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font: 16px/28px "Montserrat", "sans-serif";
+  font: 16px/28px "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+.content_tt {
+}
+.content_desc {
 }
 /* LAYOUT */
 .container {
