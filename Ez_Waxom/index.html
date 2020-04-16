@@ -25,15 +25,15 @@
     <script src="http://malsup.github.com/jquery.cycle2.js"></script>
     <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
     <script>
-      $.fn.cycle.defaults.autoSelector = ".slideshowMulti";
+      $.fn.cycle.defaults.autoSelector = ".cycle-slideshow";
     </script>
     <link rel="stylesheet" href="css/default.css" />
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container clearfix">
         <h1 class="logo"><a href="">Waxom Logo</a></h1>
-        <nav>
+        <nav class="clearfix">
           <ul class="main-menu">
             <li><a href="" class="active">Home</a></li>
             <li><a href="">About Us</a></li>
@@ -46,7 +46,7 @@
           </ul>
           <ul class="top-icons">
             <li>
-              <a href=""><i class="fas fa-shoppng-bag"></i></a>
+              <a href=""><i class="fas fa-shopping-bag"></i></a>
             </li>
             <li>
               <a href=""><i class="fas fa-search"></i></a>
@@ -59,41 +59,51 @@
       <ul
         class="slider-list cycle-slideshow"
         data-cycle-fx="scrollHorz"
-        data-cycle-timeout="2000"
-        data-cycle-slides="> div"
+        data-cycle-timeout="0"
+        data-cycle-slides="> li"
+        data-cycle-prev=".slider .prev"
+        data-cycle-next=".slider .next"
+        data-cycle-pager=".pager"
       >
         <li class="slide1">
-          <h3>Unique and Modern Design</h3>
-          <h2>Portfolio PSD Template</h2>
-          <p>
-            Nam liber tempor cum soluta nobis eleifend option congue nihil
-            imperdiet doming id quod mazim placerat facer possim assum.
-          </p>
-          <a href="" class="btn">GET STARTED</a>
+          <div class="contents">
+            <h3>Unique and Modern Design</h3>
+            <h2>Portfolio PSD Template</h2>
+            <p>
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim placerat facer possim assum.
+            </p>
+            <a href="" class="btn">GET STARTED</a>
+          </div>
         </li>
         <li class="slide2">
-          <h3>Unique and Modern Design</h3>
-          <h2>Portfolio PSD Template</h2>
-          <p>
-            Nam liber tempor cum soluta nobis eleifend option congue nihil
-            imperdiet doming id quod mazim placerat facer possim assum.
-          </p>
-          <a href="" class="btn">GET STARTED</a>
+          <div class="contents">
+            <h3>Unique and Modern Design</h3>
+            <h2>Portfolio PSD Template</h2>
+            <p>
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim placerat facer possim assum.
+            </p>
+            <a href="" class="btn">GET STARTED</a>
+          </div>
         </li>
         <li class="slide3">
-          <h3>Unique and Modern Design</h3>
-          <h2>Portfolio PSD Template</h2>
-          <p>
-            Nam liber tempor cum soluta nobis eleifend option congue nihil
-            imperdiet doming id quod mazim placerat facer possim assum.
-          </p>
-          <a href="" class="btn">GET STARTED</a>
+          <div class="contents">
+            <h3>Unique and Modern Design</h3>
+            <h2>Portfolio PSD Template</h2>
+            <p>
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim placerat facer possim assum.
+            </p>
+            <a href="" class="btn">GET STARTED</a>
+          </div>
         </li>
       </ul>
       <p class="controls">
-        <a href="" class="prev"></a>
-        <a href="" class="next"></a>
+        <a href="" class="prev">Prev</a>
+        <a href="" class="next">Next</a>
       </p>
+      <p class="pager"></p>
     </div>
     <main class="content">
       <section class="services container"></section>
