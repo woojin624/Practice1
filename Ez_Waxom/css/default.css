@@ -251,6 +251,9 @@ header .logo a {
 }
 
 /* Latest_projects */
+.latest_projects {
+  padding: 80px 0;
+}
 .latest_projects input {
   display: none;
 }
@@ -338,4 +341,114 @@ header .logo a {
 }
 .project_list li:hover .contents p {
   color: c7b299;
+}
+
+#filter-all:checked ~ .project_list li {
+  animation: fadeIn 0.3s forwards;
+}
+#filter-web:checked ~ .project_list li:not(.web) {
+  animation: fadeOut 0.3s forwards;
+}
+#filter-mobile:checked ~ .project_list li:not(.mobile) {
+  animation: fadeOut 0.3s forwards;
+}
+#filter-illust:checked ~ .project_list li:not(.illust) {
+  animation: fadeOut 0.3s forwards;
+}
+#filter-photo:checked ~ .project_list li:not(.photo) {
+  animation: fadeOut 0.3s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.load_more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* video */
+.video {
+  background: url(../images/video_bg.jpg) no-repeat center center/cover;
+  height: 705px;
+  position: relative;
+}
+.video .contents {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.video .contents * {
+  color: #fff;
+}
+.video .contents .icon {
+  font-size: 4em;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.video .contents h3 {
+  margin-top: 40px;
+}
+.video .contents span {
+  color: #c7b299;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+}
+#overlay .inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#overlay .inner .close {
+  position: absolute;
+  width: 1rem;
+  justify-self: 1rem;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  top: -1rem;
+  right: -1rem;
+  text-align: center;
+  line-height: 2rem;
+  text-decoration: none;
+}
+#overlay:target {
+  opacity: 1;
+  pointer-events: auto;
 }
