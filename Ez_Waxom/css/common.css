@@ -147,8 +147,16 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 .content_tt {
+  font-size: 30px;
+  font-weight: 600;
+  color: #555;
 }
 .content_desc {
+  font-size: 16px;
+  font-weight: 300;
+  color: #8c8c8c;
+  width: 65%;
+  margin: 23px auto 33px;
 }
 /* LAYOUT */
 .container {
