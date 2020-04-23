@@ -43,6 +43,19 @@
           nextSelector:'.recent_posts .controls .next',
           prevSelector:'.recent_posts .controls .prev'
         });
+        $(".toggle").click(function(){
+          $(".main-menu").slideToggle();
+        });
+
+        $(window).resize(function(){
+          if($(window).width() > 768){
+            $(".main-menu").show();
+          }else{
+            $(".main-menu").hide();
+          }
+        });
+
+
       });
       </script>
     <link rel="stylesheet" href="css/default.css" />
@@ -71,6 +84,7 @@
               <a href=""><i class="fas fa-search"></i></a>
             </li>
           </ul>
+          <span class="toggle"><i class="fas fa-bars"></i></span>
         </nav>
       </div>
     </header>

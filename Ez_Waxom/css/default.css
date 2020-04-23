@@ -52,6 +52,9 @@ header .logo a {
   display: block;
   text-indent: -9999em;
 }
+.toggle {
+  display: none;
+}
 
 .slider-list li {
   background-repeat: no-repeat;
@@ -807,4 +810,76 @@ footer p {
 }
 .footer_bottom p .devider {
   margin: 0 8px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  header {
+    position: static;
+    top: 0;
+    background: #fff;
+    padding: 20px 0 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  }
+  .toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    line-height: 56px;
+  }
+  header .container {
+    padding: 0;
+  }
+  header .logo a {
+    background-image: url(../images/logo_dark.png);
+  }
+  .top-icons li:last-child {
+    display: none;
+  }
+  .top-icons li a {
+    color: #555;
+  }
+  header nav {
+    float: none;
+    background: #111;
+    padding: 0 15px;
+  }
+  header nav ul {
+    float: none;
+  }
+  header .logo {
+    float: none;
+    padding-bottom: 20px;
+    margin-left: 15px;
+  }
+  .main-menu {
+    display: none;
+  }
+  .main-menu li {
+    float: none;
+    border-bottom: 1px solid #252525;
+    width: 100%;
+  }
+  .top-icons {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  .service_item {
+    width: 22%;
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .service_item {
+    width: 100%;
+    margin-right: 0;
+  }
 }
