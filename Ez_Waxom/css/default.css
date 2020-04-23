@@ -558,7 +558,7 @@ header .logo a {
 .recent_img_wrap {
   position: relative;
 }
-.post_date {
+.recent_img_wrap .post_date {
   position: absolute;
   left: 20px;
   top: 20px;
@@ -569,14 +569,14 @@ header .logo a {
   text-align: center;
   z-index: 2;
 }
-.post_date .date {
+.recent_img_wrap .post_date .date {
   background: #363636;
   display: block;
   line-height: 35px;
   font-size: 24px;
   font-weight: 300;
 }
-.post_date .month {
+.recent_img_wrap .post_date .month {
   background: #252525;
   line-height: 25px;
   font-size: 12px;
@@ -698,4 +698,113 @@ header .logo a {
 }
 .partners ul li a img {
   vertical-align: middle;
+}
+
+/* footer */
+footer p {
+  color: #555;
+  font-size: 14px;
+}
+.footer_top {
+  background: #191919;
+  padding: 80px 0;
+}
+.col-one-forth {
+  width: 270px;
+  margin-right: 30px;
+  float: left;
+}
+.col-one-forth:last-child {
+  margin-right: 0;
+}
+.footer_logo a {
+  width: 181px;
+  height: 56px;
+  background: url(../images/footer_logo.png) no-repeat;
+  text-indent: -9999em;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.col-one-forth:first-child p {
+  line-height: 24px;
+}
+.col-one-forth:first-child a {
+  font-size: 14px;
+  color: #d1d1d1;
+  text-decoration: none;
+}
+.col-one-forth:first-child a span {
+  margin-left: 6px;
+}
+.footer_top h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 16px;
+  color: #ffffff;
+}
+.footer_top .footer_list li .post_date {
+  color: #363636;
+  font-size: 12px;
+  line-height: 20px;
+  display: block;
+}
+.footer_top ul {
+  margin-top: 20px;
+}
+.footer_top .footer_list li {
+  border-bottom: 1px solid #252525;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.footer_top .footer_list li:last-child {
+  border-bottom: 0px;
+}
+.footer_top .footer_list li p {
+  line-height: 20px;
+  word-break: break-all;
+}
+.footer_top .footer_list li:hover .post_date {
+  color: #fff;
+}
+.footer_top .footer_list li:hover p {
+  color: #c7b299;
+}
+.twitter_id {
+  color: #00bff3;
+}
+.footer_top .dribble li {
+  width: 130px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.footer_top .dribble li:nth-child(2n) {
+  margin: 0 0 10px 0;
+}
+.footer_bottom {
+  background: #111;
+  padding: 42px 0 49px;
+}
+.footer_bottom p {
+  line-height: 20px;
+}
+.footer_bottom .copy {
+  float: left;
+}
+.footer_bottom .designer {
+  float: right;
+}
+.footer_bottom p a {
+  color: #555;
+  text-decoration: none;
+}
+.footer_bottom p a:hover {
+  color: #c7b299;
+}
+.footer_bottom p span {
+  color: #959595;
+}
+.footer_bottom p .devider {
+  margin: 0 8px;
 }
