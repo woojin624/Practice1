@@ -15,7 +15,9 @@ console.log(2 ** 3); // exponentiation
 let counter = 2;
 const perIncrement = ++counter;
 // counter = counter + 1;
+
 // preIncrement = counter;
+
 console.log(`preIncrement: ${preIncrement}, counter: ${counter}`);
 const postIncrement = counter++;
 // postIncrement = counter;
