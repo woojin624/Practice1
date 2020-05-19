@@ -125,7 +125,6 @@ const printNo = function print() {
   console.log("no!");
 };
 randomQuiz("wrong", printYes, printNo);
-
 randomQuiz("love you", printYes, printNo);
 
 // Arrow function
